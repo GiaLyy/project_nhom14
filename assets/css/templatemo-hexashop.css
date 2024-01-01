@@ -327,7 +327,6 @@ header
   padding: 8px 16px;
   border: none;
   border: 1px solid #000;
-  /* background-color: #3498db; */
   background-color: #000;
   color: #fff;
   cursor: pointer;
@@ -446,38 +445,6 @@ h3.title-logo {
   align-items: center;
 }
 
-/* nut dang ki  */
-/* .btn-Signup button{
-  display: block;
-  border-radius: 30px;
-  height: 60px;
-  width: 130px;
-  background-color:black;
-  color: white;
-  margin-left: 1300px;
-  margin-top: -60px;
-  white-space: nowrap;
-}
-.btn-Signup button:hover{
-  background-color:#7a7a7a;
-  border: 1px solid #7a7a7a;
-} */
-/* nut dang nhap  */
-/* .btn-Login button{
-  display: block;
-  border: white;
-  border-radius: 30px;
-  width: 130px;
-  height: 60px;
-  margin-left: 1140px;
-  margin-top: 20px;
-  white-space: nowrap;
-}
-.btn-Login button:hover{
-  background-color:#7a7a7a;
-  border: 1px solid #7a7a7a;
-  color: white;
-} */
 #list {
   display: inline-block;
   margin-left: 200px;
@@ -727,7 +694,7 @@ h3.title-logo {
 }
 
 .header-area.header-sticky {
-  min-height: 110px;
+  min-height: 130px;
   background-color: #f5f5f5;
 }
 
@@ -1216,25 +1183,6 @@ banner
 .section-loaded .animate-text {
   animation-play-state: running;
 }
-
-/* end animation  */
-
-/* #img-elephant{
-  height: 340px;
-  width: 340px;
-}
-#img-grant{
-  margin-top: -115px;
-}
-#img-starry{
-  width: 340px;
-  height: 340px;
-}
-#img-scream{
-  width: 340px;
-  height: 340px;
-  margin-top: -297px;
-} */
 
 /*** Team ***/
 .team-item {
@@ -2484,7 +2432,7 @@ About Us Page
 .about-page-heading {
   margin-top: 160px;
   margin-bottom: 30px;
-  background-image: url(../images/about-us-page-heading.jpg);
+  background-image: url(../images/theStaryNight.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2710,7 +2658,7 @@ contact Us Page
 
 .contact-us {
   margin-top: 90px;
-  border-bottom: 3px dotted #eee;
+  /* border-bottom: 3px dotted #eee; */
   padding-bottom: 90px;
 }
 
@@ -2995,4 +2943,161 @@ body.dark .header .main-nav .nav li a {
 
 body.dark .header-area .background-header .main-nav .nav li #switch-mode {
   color: #fff;
+}
+
+
+/* contact  */
+
+section.contact-us {
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+.contact-us .section-heading h2 {
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 60px;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	/* color: #121212; */
+}
+
+.contact-us p {
+	margin-top: -5px;
+}
+
+.contact-us em {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	color: #aaa;
+}
+
+.contact-us input {
+  border-radius: 3px;
+  padding-left: 15px;
+  font-size: 13px;
+  color: #4a4a4a;
+  background-color: #f4f4f4;
+  outline: none!important;
+  border: none;
+  box-shadow: none;
+  line-height: 44px;
+  height: 44px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.contact-us textarea {
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #4a4a4a;
+  background-color: #f4f4f4;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  height: 122px;
+  max-height: 220px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.contact-us button {
+	width: 100%;
+	display: inline-block;
+	background-color: #f2745f;
+	color: #fff!important;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 12px 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+
+section.map {
+	margin-bottom: 150px;
+}
+
+section.map #map {
+	height: 450px;
+}
+/* contact */
+
+#feedbackForm form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+#feedbackForm label {
+  display: block;
+  margin-bottom: 8px;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-right: 8px;
+}
+input[type="radio"]:checked + label {
+  background-color: #4caf50;
+  color: #fff;
+  border-color: #4caf50;
+}
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+button {
+  /* background-color: #4caf50;
+  color: #fff; */
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* rating  */
+div.stars {
+width: 1150px;
+margin-top: -55px;
+display: block;
+}
+input.star { display: none; }
+
+label.star {
+float: right;
+padding: 10px;
+font-size: 36px;
+color: #444;
+transition: all .2s;
+}
+input.star:checked ~ label.star:before {
+content: '\f005';
+color: #FD4;
+transition: all .25s;
+}
+input.star-5:checked ~ label.star:before {
+color: #FE7;
+text-shadow: 0 0 20px #952;
+}
+input.star-1:checked ~ label.star:before { color: #F62; } 
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+label.star:before {
+content: '\f006';
+font-family: FontAwesome;
 }

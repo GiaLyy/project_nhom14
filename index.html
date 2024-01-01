@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
     <title>Art-Group14.com</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
 
 
     <!-- Additional CSS Files -->
@@ -89,33 +90,16 @@ https://templatemo.com/tm-571-hexashop
                             <li class="scroll-to-section"><a href="#week5">Work</a></li>
                             <li class="scroll-to-section"><a href="#explore">Explore</a></li>
                             <li class="scroll-to-section"><a href="blog.html">Blog</a></li>
+                            <li class="scroll-to-section"><a href="contact.html">Contact</a></li>
                             <li class="submenu">
                                 <a href="javascript:;">Pages</a>
                                 <ul>
                                     <li><a href="moreExplore.html">More Explore</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                   
                                 </ul>
                             </li>
                             <li><button id="switch-mode"><i class="bi bi-moon-stars-fill"></i></button></li>
-                        </ul>
-
-
-                        <!-- <div id="list">
-                            <ul class="nav">
-                                <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                                <li class="scroll-to-section"><a href="#about">About</a></li>
-                                <li class="scroll-to-section"><a href="#week5">Week5</a></li>
-                                <li class="scroll-to-section"><a href="#explore">Explore</a></li>
-                                <li class="submenu">
-                                    <a href="javascript:;">Pages</a>
-                                    <ul>
-                                        <li><a href="single-product.html">Single Product</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </li>
-                                <li class="scroll-to-section"><a href="#contact">Subscribe</a></li>
-                            </ul>
-                        </div> -->
+                        </ul>  
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
@@ -137,7 +121,6 @@ https://templatemo.com/tm-571-hexashop
                         <div class="thumb">
                             <div style="display: block; margin-top: -10px;" class="inner-content">
                                 <h4>The Starry Night 1889</h4>
-                                <!-- <span>Awesome, clean &amp; creative HTML5 Template</span> -->
                                 <span>Vincent van Gogh</span>
                                 <div class="main-border-button">
                                     <a href="#">Read more</a>
@@ -465,11 +448,11 @@ https://templatemo.com/tm-571-hexashop
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Tạo chức năng feedback</td>
+                                        <td>Tạo chức năng feedback, trang Contact</td>
                                         <td>Hoàng Như Lan</td>
                                         <td>22130139</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>Hoàn thành</td>
+                                        <td>100%</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
@@ -793,35 +776,41 @@ https://templatemo.com/tm-571-hexashop
     </section>
     <!-- ***** More Explore (ends) ***** -->
     <!-- ***** Experience (started) ***** -->
-    <style>
-        .experience img {
-            width: 1900px;
-            /* Điều chỉnh kích thước theo nhu cầu */
-            height: auto;
-            transition: transform 0.3s ease-in-out;
-            cursor: pointer;
-        }
+   <!-- loat  -->
+   <style>
+    .experience img {
+      width: 1900px; /* Điều chỉnh kích thước theo nhu cầu */
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
 
-        /* Hiệu ứng nổi lên khi được nhấp */
-        .experience img:hover {
-            transform: scale(1.1);
-            /* Tăng kích thước 110% */
-        }
+    /* Hiệu ứng nổi lên khi được nhấp */
+    .experience img:hover {
+      transform: scale(1.1); /* Tăng kích thước 110% */
+    }
 
-        /* Lớp hiệu ứng khi hình được nhấp */
-        .experience img.clicked {
-            transform: scale(1.5);
-            /* Tăng kích thước 150% */
-        }
-    </style>
-    <div>
+    /* Lớp hiệu ứng khi hình được nhấp */
+    .experience img.clicked {
+      transform: scale(1.5); /* Tăng kích thước 150% */
+    }
+  </style>
+  <div class="experience">
 
-        <img class="experience" src="assets/images/trainghiem.jpg" alt="trainghiem" onclick="toggleImage()">
-
-    </div>
+    <img style="width: 100%;"  src="assets/images/trainghiem.jpg" alt="trainghiem" onclick="toggleImage()">
+   
+  </div>
+  <script>
+    function toggleImage() {
+      var image = document.querySelector('.experience img');
+  
+      // Thêm hoặc xóa lớp 'clicked' để kích hoạt hoặc hủy hiệu ứng nổi lên
+      image.classList.toggle('clicked');
+    }
+  </script>
     <script>
         function toggleImage() {
-            var image = document.querySelector('div img');
+            var image = document.querySelector('.experience img');
 
             // Thêm hoặc xóa lớp 'clicked' để kích hoạt hoặc hủy hiệu ứng nổi lên
             image.classList.toggle('clicked');
@@ -830,7 +819,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Experience (end) ***** -->
     <!-- ***** Subscribe Area Starts ***** -->
     <section class="section" id="contact">
-        <div class="subscribe">
+        <!-- <div class="subscribe">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -882,7 +871,7 @@ https://templatemo.com/tm-571-hexashop
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- ***** Subscribe Area Ends ***** -->
@@ -904,19 +893,24 @@ https://templatemo.com/tm-571-hexashop
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <h4>Shopping &amp; Categories</h4>
+                    <h4>Artistic &amp; Paintings</h4>
                     <ul>
-                        <li><a href="#">Men’s Shopping</a></li>
-                        <li><a href="#">Women’s Shopping</a></li>
-                        <li><a href="#">Kid's Shopping</a></li>
+                        <li><a href="#">The Starry Night 1889</a></li>
+                        <li><a href="#">Mona Lisa</a></li>
+                        <li><a href="#">The Elephant Celebes</a></li>
+                        <li><a href="#">The Blue Rider, 1903</a></li>
+                        <li><a href="#">American Gothic</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="#">Homepage</a></li>
-                        <li><a href="#men">About Us</a></li>
-                        <li><a href="#">Help</a></li>
+                        <li><a href="#top">Homepage</a></li>
+                        <li><a href="#men">About</a></li>
+                        <li><a href="#week5">Work</a></li>
+                        <li><a href="#explore"></a></li>
+                        <li><a href="moreExplore.html">Pages</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -931,7 +925,7 @@ https://templatemo.com/tm-571-hexashop
                 </div>
                 <div class="col-lg-12">
                     <div class="under-footer">
-                        <p>Group 14 © 2022 HexaShop Co., Ltd. All Rights Reserved.
+                        <p>Group 14 © 2024 Painting Art, Ltd. All Rights Reserved.
 
                             <br>Design: <a href="#" target="_parent" title="free css templates">Group 14</a>
                         </p>
