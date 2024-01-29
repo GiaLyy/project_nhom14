@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/login.css" />
+  <title>Login-SignUp</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png" />
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up">
+      <form id="form-signUp">
+        <h1>Đăng Kí</h1>
+        <div>
+          <div>
+            <input id="username" type="username" placeholder="username (8-20 kí tự)" />
+            <input id="email" type="email" placeholder="Email" />
+            <input id="password" type="password" placeholder="password (8-20 kí tự)" />
+            <input id="password_confirm" type="password" placeholder="password-confirm (8-20 kí tự)" />
+            <button>Đăng Kí</button>
+          </div>
+        </div>
+        <p>------Hoặc------</p>
+        <div class="social-icons">
+          <a href="#" class="icon">
+            <img src="assets/images/google-icon.png" alt="Google" />
+          </a>
+          <a href="#" class="icon">
+            <img src="assets/images/facebook-icon.png" alt="Google" />
+          </a>
+        </div>
+        <div>
+          <a href="index.html" id="trang-chu">
+            <h3>Trở về Trang Chủ</h3>
+          </a>
+        </div>
+      </form>
+    </div>
+    <div class="form-container sign-in">
+      <form id="form-signIn">
+        <h2>Đăng Nhập</h2>
+        <div>
+          <div>
+            <input id="email-login" type="email" placeholder="email" />
+            <input id="password-login" type="password" placeholder="password (8-20 kí tự)" />
+            <a href="#">
+              <h4>Quên Mật Khẩu?</h4>
+            </a>
+            <button>Đăng Nhập</button>
+          </div>
+        </div>
+        <p>------Hoặc------</p>
+        <div class="social-icons">
+          <a href="#" class="icon">
+            <img src="assets/images/google-icon.png" alt="Google" />
+          </a>
+          <a href="#" class="icon">
+            <img src="assets/images/facebook-icon.png" alt="Google" />
+          </a>
+        </div>
+        <div>
+          <a href="index.html" id="trang-chu">
+            <h3>Trở về Trang Chủ</h3>
+          </a>
+        </div>
+      </form>
+    </div>
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Chào Mừng Đến Project Nhóm 14</h1>
+          <p>Bạn đã có tài khoản?</p>
+          <button class="hidden" id="login">Đăng Nhập</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1>Welcome To Project Group 14</h1>
+          <p>Bạn chưa có tài khoản?</p>
+          <button class="hidden" id="register">Đăng Kí</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/login.js"></script>
+  <script>
+    const container = document.getElementById("container");
+    const registerBtn = document.getElementById("register");
+    const loginbtn = document.getElementById("login");
+
+    registerBtn.addEventListener("click", () => {
+      container.classList.add("active");
+    });
+
+    loginbtn.addEventListener("click", () => {
+      container.classList.remove("active");
+    });
+  </script>
+</body>
+
+</html>

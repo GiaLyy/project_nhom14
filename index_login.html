@@ -77,12 +77,8 @@ https://templatemo.com/tm-571-hexashop
                 <img src="assets/images/logo.png" />
               </a>
               <div class="btn-active">
-                <a href="/index_login.html" class="btn-login" id="login"
-                  >Login</a
-                >
-                <a href="./login_signup.html" class="btn-signUp" id="signUp"
-                  >SignUp</a
-                >
+                <button class="btn-login">Admin</button>
+                <button class="btn-login btn-logout">Logout</button>
               </div>
             </div>
             <nav class="main-nav">
@@ -1280,20 +1276,21 @@ https://templatemo.com/tm-571-hexashop
         //save mode
         localStorage.setItem("darkmode", mode);
       });
-    </script>
+      // neu khong co user trong session thi chuyen ve trang login
+      if (sessionStorage.getItem("user") == null) {
+        window.location.href = "login_signup.html";
+      }
 
-    <script>
-      // Lấy button bằng cách sử dụng id
-      var button = document.getElementById("login");
-      var button1 = document.getElementById("signUp");
-      // Gán sự kiện click cho button
-      button.addEventListener("click", function () {
-        // Chuyển hướng đến đường link mới khi button được click
-        window.location.href = "login.html";
-      });
-      button1.addEventListener("click", function () {
-        // Chuyển hướng đến đường link mới khi button được click
-        window.location.href = "login.html";
+      const btnLogin = document.querySelector(".btn-login");
+      const user = JSON.parse(sessionStorage.getItem("user"));
+      if (sessionStorage.getItem("user") != null) {
+        btnLogin.innerHTML = user.username;
+      }
+
+      const btnLogout = document.querySelector(".btn-logout");
+      btnLogout.addEventListener("click", () => {
+        sessionStorage.removeItem("user");
+        window.location.href = "login_signup.html";
       });
     </script>
   </body>
